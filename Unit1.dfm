@@ -1,6 +1,6 @@
 object MainForm: TMainForm
-  Left = 217
-  Top = 222
+  Left = 206
+  Top = 355
   Width = 969
   Height = 461
   Align = alClient
@@ -286,7 +286,7 @@ object MainForm: TMainForm
     end
     object IBTableSotrudur: TStringField
       DisplayLabel = #1070#1088'.'#1083#1080#1094#1072
-      DisplayWidth = 10
+      DisplayWidth = 20
       FieldKind = fkLookup
       FieldName = 'ur'
       LookupDataSet = IBTableUR
@@ -297,7 +297,7 @@ object MainForm: TMainForm
     end
     object IBTableSotrudfiz: TStringField
       DisplayLabel = #1060#1080#1079'.'#1083#1080#1094#1072
-      DisplayWidth = 10
+      DisplayWidth = 20
       FieldKind = fkLookup
       FieldName = 'fiz'
       LookupDataSet = IBTableFiz
@@ -308,7 +308,7 @@ object MainForm: TMainForm
     end
     object IBTableSotruddolj: TStringField
       DisplayLabel = #1044#1086#1083#1078#1085#1086#1089#1090#1100
-      DisplayWidth = 10
+      DisplayWidth = 20
       FieldKind = fkLookup
       FieldName = 'dolj'
       LookupDataSet = IBTableDoljnost
