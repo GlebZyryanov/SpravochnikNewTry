@@ -1,6 +1,6 @@
 object DoljnostiForm: TDoljnostiForm
-  Left = 353
-  Top = 179
+  Left = 324
+  Top = 183
   Width = 648
   Height = 600
   Align = alClient

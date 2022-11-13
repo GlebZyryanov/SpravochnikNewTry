@@ -1,6 +1,6 @@
 object FizicForm: TFizicForm
-  Left = 403
-  Top = 212
+  Left = 460
+  Top = 202
   Width = 648
   Height = 580
   Align = alClient
