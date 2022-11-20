@@ -3,6 +3,7 @@ object UrForm: TUrForm
   Top = 177
   Width = 935
   Height = 599
+  HorzScrollBar.Position = 302
   Align = alClient
   Caption = #1070#1088#1080#1076#1080#1095#1077#1089#1082#1080#1077' '#1083#1080#1094#1072
   Color = clBtnFace
@@ -20,7 +21,7 @@ object UrForm: TUrForm
   PixelsPerInch = 96
   TextHeight = 13
   object btnZakritUR: TButton
-    Left = 1100
+    Left = 798
     Top = 10
     Width = 120
     Height = 18
@@ -29,7 +30,7 @@ object UrForm: TUrForm
     OnClick = btnZakritURClick
   end
   object DBGrid2URFORM: TDBGrid
-    Left = 5
+    Left = -297
     Top = 30
     Width = 1000
     Height = 800
@@ -85,7 +86,7 @@ object UrForm: TUrForm
       end>
   end
   object DBNavigator2URFORM: TDBNavigator
-    Left = 5
+    Left = -297
     Top = 10
     Width = 500
     Height = 18
@@ -93,7 +94,7 @@ object UrForm: TUrForm
     TabOrder = 2
   end
   object btnDobavitZapis: TButton
-    Left = 1101
+    Left = 799
     Top = 48
     Width = 120
     Height = 18
@@ -102,7 +103,7 @@ object UrForm: TUrForm
     OnClick = btnDobavitZapisClick
   end
   object btnUdalitZapis: TButton
-    Left = 1101
+    Left = 799
     Top = 80
     Width = 120
     Height = 18

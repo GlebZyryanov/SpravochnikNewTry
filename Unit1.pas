@@ -4,7 +4,8 @@ interface
 
 uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
-  Dialogs, Grids, DBGrids, Menus, DB, IBCustomDataSet, IBTable, IBDatabase;
+  Dialogs, Grids, DBGrids, Menus, DB, IBCustomDataSet, IBTable, IBDatabase,
+  IBQuery;
 
 type
   TMainForm = class(TForm)
@@ -38,19 +39,20 @@ type
     IBTableSotrudDATE_WORK_START: TIBStringField;
     IBTableSotrudDATE_WORK_END: TIBStringField;
     IBTableSotrudWORKPHONE_NUMBER: TIBStringField;
-    IBTableSotrudur: TStringField;
-    IBTableSotrudfiz: TStringField;
-    IBTableSotruddolj: TStringField;
     IBTableURID_UR: TIntegerField;
     IBTableURNAME_L: TIBStringField;
     IBTableURNAME_S: TIBStringField;
     IBTableUROGRN: TIBStringField;
     IBTableURINN: TIBStringField;
     IBTableURKPP: TIBStringField;
+    IBTableSotrudUR_NAME: TIBStringField;
+    IBTableSotrudFIZ_NAME: TIBStringField;
+    IBTableSotrudD_NAME: TIBStringField;
     procedure N2Click(Sender: TObject);
     procedure N3Click(Sender: TObject);
     procedure N4Click(Sender: TObject);
     procedure N5Click(Sender: TObject);
+   
   private
     { Private declarations }
   public
@@ -62,7 +64,7 @@ var
   f,i: Integer;//f - флаг запущена форма или нет
 
 implementation
-uses Unit2,Unit3,Unit4,Unit5;
+uses Unit2,Unit3,Unit4,Unit5,Unit6;
 {$R *.dfm}
 
 procedure TMainForm.N2Click(Sender: TObject);
@@ -141,6 +143,8 @@ begin
     //если форма еще не создана - создать
     if f<>1 then TDoljnostiForm.Create(Application)
 end;
+
+
 
 
 

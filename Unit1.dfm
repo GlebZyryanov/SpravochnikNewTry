@@ -1,7 +1,7 @@
 object MainForm: TMainForm
-  Left = 235
-  Top = 212
-  Width = 969
+  Left = 320
+  Top = 205
+  Width = 549
   Height = 461
   Align = alClient
   Caption = #1057#1087#1088#1072#1074#1086#1095#1085#1080#1082' '#1092#1080#1079#1080#1095#1077#1089#1082#1080#1093' '#1080' '#1102#1088#1080#1076#1080#1095#1077#1089#1082#1080#1093' '#1083#1080#1094
@@ -271,6 +271,21 @@ object MainForm: TMainForm
         DataType = ftInteger
       end
       item
+        Name = 'UR_NAME'
+        DataType = ftString
+        Size = 80
+      end
+      item
+        Name = 'FIZ_NAME'
+        DataType = ftString
+        Size = 100
+      end
+      item
+        Name = 'D_NAME'
+        DataType = ftString
+        Size = 80
+      end
+      item
         Name = 'IDUR'
         DataType = ftInteger
       end
@@ -314,39 +329,6 @@ object MainForm: TMainForm
       FieldName = 'ID_SOTR'
       Required = True
     end
-    object IBTableSotrudur: TStringField
-      DisplayLabel = #1070#1088#1080#1076#1080#1095#1077#1089#1082#1080#1077' '#1083#1080#1094#1072
-      DisplayWidth = 25
-      FieldKind = fkLookup
-      FieldName = 'ur'
-      LookupDataSet = IBTableUR
-      LookupKeyFields = 'ID_UR'
-      LookupResultField = 'NAME_L'
-      KeyFields = 'IDUR'
-      Lookup = True
-    end
-    object IBTableSotrudfiz: TStringField
-      DisplayLabel = #1060#1080#1079#1080#1095#1077#1089#1082#1080#1077' '#1083#1080#1094#1072
-      DisplayWidth = 25
-      FieldKind = fkLookup
-      FieldName = 'fiz'
-      LookupDataSet = IBTableFiz
-      LookupKeyFields = 'ID_FIZ'
-      LookupResultField = 'FIO'
-      KeyFields = 'IDFIZ'
-      Lookup = True
-    end
-    object IBTableSotruddolj: TStringField
-      DisplayLabel = #1044#1086#1083#1078#1085#1086#1089#1090#1100
-      DisplayWidth = 20
-      FieldKind = fkLookup
-      FieldName = 'dolj'
-      LookupDataSet = IBTableDoljnost
-      LookupKeyFields = 'ID_DOLJ'
-      LookupResultField = 'NAME_DOLJ'
-      KeyFields = 'IDDOLJ'
-      Lookup = True
-    end
     object IBTableSotrudIDUR: TIntegerField
       FieldName = 'IDUR'
     end
@@ -374,6 +356,37 @@ object MainForm: TMainForm
       DisplayWidth = 15
       FieldName = 'WORKPHONE_NUMBER'
       Size = 15
+    end
+    object IBTableSotrudUR_NAME: TIBStringField
+      FieldKind = fkLookup
+      FieldName = 'UR_NAME'
+      LookupDataSet = IBTableUR
+      LookupKeyFields = 'ID_UR'
+      LookupResultField = 'NAME_L'
+      KeyFields = 'IDUR'
+      Size = 80
+      Lookup = True
+    end
+    object IBTableSotrudFIZ_NAME: TIBStringField
+      FieldKind = fkLookup
+      FieldName = 'FIZ_NAME'
+      LookupDataSet = IBTableFiz
+      LookupKeyFields = 'ID_FIZ'
+      LookupResultField = 'FIO'
+      KeyFields = 'IDFIZ'
+      Size = 100
+      Lookup = True
+    end
+    object IBTableSotrudD_NAME: TIBStringField
+      DisplayWidth = 20
+      FieldKind = fkLookup
+      FieldName = 'D_NAME'
+      LookupDataSet = IBTableDoljnost
+      LookupKeyFields = 'ID_DOLJ'
+      LookupResultField = 'NAME_DOLJ'
+      KeyFields = 'IDDOLJ'
+      Size = 80
+      Lookup = True
     end
   end
 end
